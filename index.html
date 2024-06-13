@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+   
+    <div class="filter-container">
+        <label for="category">Filter by Category:</label>
+        <select id="category" class="filter">
+            <option value="all">All</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Books">Books</option>
+            <option value="Home & Kitchen">Home & Kitchen</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Health & Beauty">Health & Beauty</option>
+            <option value="Furniture">Furniture</option>
+        </select>
+        <label for="stock">Stock less than 10:</label>
+        <input type="checkbox" id="stock" class="filter">
+        <label for="price">Price less than $100:</label>
+        <input type="checkbox" id="price" class="filter">
+    </div>
+    <div id="product-container" class="product-container"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
